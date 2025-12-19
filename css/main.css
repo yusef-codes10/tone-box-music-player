@@ -74,6 +74,8 @@ body {
     bottom: -48px;
     left: 10px;
     /* ? fix: needs to be fixed later */
+
+    text-align: center;
 }
 
 .media-btns .play-btn {
