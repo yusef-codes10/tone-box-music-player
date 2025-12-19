@@ -1,3 +1,26 @@
+:root {
+  /* ===== Backgrounds ===== */
+  --color-bg-primary: #FFF7E6;     /* App background */
+  --color-bg-surface: #FFFFFF;     /* Cards / player surface */
+
+  /* ===== Brand / Accent ===== */
+  --color-accent-primary: #FF8A2B; /* Play button, active track */
+  --color-accent-soft: #FFD2A6;    /* Hover, secondary accents */
+  --color-accent-pattern: #FFB36B; /* Decorative shapes / patterns */
+
+  /* ===== Text ===== */
+  --color-text-primary: #2E2E2E;   /* Titles, main text */
+  --color-text-secondary: #7A7A7A; /* Metadata, time, labels */
+
+  /* ===== Icons & UI States ===== */
+  --color-icon-inactive: #BFBFBF;  /* Disabled / inactive icons */
+  --color-icon-active: var(--color-accent-primary);
+
+  /* ===== Effects ===== */
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,5 +29,7 @@
 
 body {
     height: 100vh;
-    background-color: aquamarine;
 }
+
+
+
