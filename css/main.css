@@ -65,4 +65,14 @@ body {
     position: absolute;
     bottom: -48px;
     left: 10px;
+    /* ? fix: needs to be fixed later */
+}
+
+.media-btns .play-btn {
+    color: var(--color-accent-primary);
+    background-color: var(--color-bg-surface);
+}
+
+.media-btns button:hover {
+    background-color: var(--color-accent-soft);
 }
