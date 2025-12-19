@@ -5,8 +5,9 @@ const btnContainer = document.querySelector('.media-btns');
 console.log(btnContainer);
 
 btnContainer.addEventListener('click', e => {
-    console.log(`${e.target} has been clicked`);
-    console.log(e.target);
+    if (e.target.classList.contains('btn')) {
+        console.log('yes, that\'s your target!');
+    }
 })
 
 function playMusic() {
