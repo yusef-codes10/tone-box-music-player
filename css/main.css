@@ -50,15 +50,19 @@ body {
 }
 
 .media-btns .btn {
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
+    width: 75px;
+    height: 75px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+
+    font-size: 1.22rem;
 }
 
 .media-btns .btn span {
     position: absolute;
-    bottom: -16px;
+    bottom: -48px;
     left: 10px;
 }
