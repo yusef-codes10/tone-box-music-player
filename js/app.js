@@ -4,6 +4,9 @@ console.log("js has been loaded!");
 const btnContainer = document.querySelector('.media-btns');
 console.log(btnContainer);
 
+btnContainer.addEventListener('click', () => {
+    console.log('you are clicking');
+})
 
 function playMusic() {
     
