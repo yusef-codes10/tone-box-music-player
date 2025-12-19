@@ -5,6 +5,7 @@ const btnContainer = document.querySelector('.media-btns');
 console.log(btnContainer);
 
 btnContainer.addEventListener('click', e => {
+    // we have to use closest() method
     if (e.target.classList.contains('btn')) {
         console.log('yes, that\'s your target!');
     }     if (e.target.classList.contains('backward-step-btn')) {
