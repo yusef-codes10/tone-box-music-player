@@ -76,3 +76,7 @@ body {
 .media-btns button:hover {
     background-color: var(--color-accent-soft);
 }
+
+.media-btns span {
+    color: var(--color-text-primary);
+}
