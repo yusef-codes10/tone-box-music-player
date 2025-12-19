@@ -54,4 +54,11 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
+}
+
+.media-btns .btn span {
+    position: absolute;
+    bottom: -16px;
+    left: 10px;
 }
