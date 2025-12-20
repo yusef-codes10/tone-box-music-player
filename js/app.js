@@ -68,11 +68,10 @@ function nextMusic() {
 }
 
 function previousMusic() {
-    if (currentMusicId < 0) {
+    if (currentMusicId <= 0) {
         currentMusicId = bgmList.length - 1;
     } else {
         currentMusicId--;
     }
     console.log(currentMusicId);
-
 }
