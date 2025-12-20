@@ -1,0 +1,1 @@
+// here, we are to create an array of music objects {id, image, audio}
