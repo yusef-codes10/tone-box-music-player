@@ -89,8 +89,16 @@ document.addEventListener('keydown', e => {
 })
 
 function displayMusicTitle(id) {
+    // updating the whole state
+    const items = musicTitle.querySelectorAll('.title-dynamic');
+    // items is a node list now
+    items.forEach(
+        item => item.remove()
+    );
+
     const currentMusic = bgmList[id];
     const titleSpan = document.createElement('p');
+    titleSpan.classList.add('.title-dynamic');
     titleSpan.textContent = currentMusic.title;
     musicTitle.append(titleSpan);
     
