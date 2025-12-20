@@ -7,6 +7,8 @@ console.log(btnContainer);
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
     const btn = e.target.closest('btn');
+    if (!btn) return;
+    
     console.log(btn);
     if (e.target.classList.contains('btn')) {
         console.log('yes, that\'s your target!');
