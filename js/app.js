@@ -31,6 +31,7 @@ btnContainer.addEventListener('click', e => {
 function playMusic() {
     // playing the music here, 1st one
     const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
+    currentMusic.ost.play();
     console.log(currentMusic);
 }
 
