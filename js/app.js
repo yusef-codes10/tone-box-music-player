@@ -10,17 +10,19 @@ btnContainer.addEventListener('click', e => {
     if (!btn) return;
 
     console.log(btn);
-    if (e.target.classList.contains('btn')) {
-        console.log('yes, that\'s your target!');
-    }     if (e.target.classList.contains('backward-step-btn')) {
+    if (e.target.closest('.backward-step-btn')) {
         console.log('yes, that\'s backward!');
-    }    if (e.target.classList.contains('backward-btn')) {
+    }    
+    if (e.target.closest('.backward-btn')) {
         console.log('yes, that\'s btn backward-btn!');
-    }    if (e.target.classList.contains('play-btn')) {
+    }    
+    if (e.target.closest('.play-btn')) {
         console.log('yes, that\'s play-btn!');
-    }    if (e.target.classList.contains('forward-btn')) {
+    }    
+    if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
-    }    if (e.target.classList.contains('forward-step-btn')) {
+    }    
+    if (e.target.closest('.forward-step-btn')) {
         console.log('yes, that\'s forward-step-btn!');
     }
 })
