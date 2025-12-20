@@ -14,6 +14,7 @@ btnContainer.addEventListener('click', e => {
     console.log(btn);
     if (e.target.closest('.backward-step-btn')) {
         console.log('yes, that\'s backward!');
+        previousMusic();
     }    
     if (e.target.closest('.backward-btn')) {
         console.log('yes, that\'s btn backward-btn!');
@@ -24,10 +25,10 @@ btnContainer.addEventListener('click', e => {
     }    
     if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
-        nextMusic();
     }    
     if (e.target.closest('.forward-step-btn')) {
         console.log('yes, that\'s forward-step-btn!');
+        nextMusic();
     }
 })
 
@@ -67,5 +68,11 @@ function nextMusic() {
 }
 
 function previousMusic() {
-    currentMusicId--;
+    if (currentMusicId < 0) {
+        currentMusicId = bgmList.length - 1;
+    } else {
+        currentMusicId--;
+    }
+    console.log(currentMusicId);
+
 }
