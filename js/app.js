@@ -2,7 +2,8 @@ import {bgmList} from './bgm.js'
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
-console.log(btnContainer);
+const musicTitle = document.querySelector('.music-title');
+
 
 let currentMusicId = 0;
 
@@ -39,6 +40,9 @@ function playMusic(id) {
     currentMusic.ost.play();
     console.log(currentMusic);
     console.log(bgmList[0]);
+
+    // calling the display music
+    displayMusicTitle(id);
 }
 
 function stopMusic(id) {
@@ -83,3 +87,11 @@ document.addEventListener('keydown', e => {
         stopMusic(currentMusicId);
     }
 })
+
+function displayMusicTitle(id) {
+    const currentMusic = bgmList[id];
+    const titleSpan = document.createElement('p');
+    titleSpan.textContent = currentMusic.title;
+    musicTitle.append(titleSpan);
+    
+}
