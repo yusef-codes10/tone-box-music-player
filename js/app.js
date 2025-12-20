@@ -56,6 +56,7 @@ function moveBackward() {
 }
 
 function nextMusic() {
+    // we have to make sure to not get out of bounds
     currentMusicId++;
 }
 
