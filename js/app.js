@@ -98,7 +98,7 @@ function displayMusicTitle(id) {
 
     const currentMusic = bgmList[id];
     const titleSpan = document.createElement('p');
-    titleSpan.classList.add('.title-dynamic');
+    titleSpan.classList.add('title-dynamic');
     titleSpan.textContent = currentMusic.title;
     musicTitle.append(titleSpan);
     
