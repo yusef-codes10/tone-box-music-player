@@ -11,5 +11,11 @@ export const bgmList = [
         title: 'Burning Town',
         img: '',
         ost: new Audio('/assets/audio/burning-town.mp3'),
+    }, 
+    {
+        id: 'fight-theme',
+        title: 'Fight Theme',
+        img: '',
+        ost: new Audio('/assets/audio/fight-theme.mp3'),
     }
 ];
