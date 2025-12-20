@@ -1,4 +1,4 @@
-console.log("js has been loaded!");
+import {bgmList} from './bgm.js'
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
@@ -6,6 +6,8 @@ console.log(btnContainer);
 
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
+    const btn = e.target.closest('btn');
+    console.log(btn);
     if (e.target.classList.contains('btn')) {
         console.log('yes, that\'s your target!');
     }     if (e.target.classList.contains('backward-step-btn')) {
