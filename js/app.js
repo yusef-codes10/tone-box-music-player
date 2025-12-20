@@ -43,7 +43,7 @@ function playMusic(id) {
 
 function stopMusic(id) {
     const currentMusic = bgmList[id];
-    currentMusic.pause();
+    currentMusic.ost.pause();
     currentMusic.currentTime = 0;
 }
 

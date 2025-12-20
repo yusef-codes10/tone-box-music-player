@@ -90,3 +90,7 @@ body {
 .media-btns span {
     color: var(--color-text-primary);
 }
+
+.hidden {
+    display: none;
+}
