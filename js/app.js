@@ -24,6 +24,7 @@ btnContainer.addEventListener('click', e => {
     }    
     if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
+        nextMusic();
     }    
     if (e.target.closest('.forward-step-btn')) {
         console.log('yes, that\'s forward-step-btn!');
@@ -57,7 +58,12 @@ function moveBackward() {
 
 function nextMusic() {
     // we have to make sure to not get out of bounds
-    currentMusicId++;
+    if (currentMusicId < bgmList.length - 1) {
+        currentMusicId++;
+    } else {
+        currentMusicId = 0;
+    }
+    console.log(currentMusicId);
 }
 
 function previousMusic() {
