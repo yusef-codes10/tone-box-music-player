@@ -21,28 +21,29 @@ btnContainer.addEventListener('click', e => {
     }    
     if (e.target.closest('.play-btn')) {
         console.log('yes, that\'s play-btn!');
-        playMusic();
+        playMusic(currentMusicId);
     }    
     if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
     }    
     if (e.target.closest('.forward-step-btn')) {
         console.log('yes, that\'s forward-step-btn!');
-        nextMusic();
+        nextMusic(currentMusicId);
     }
 })
 
-function playMusic() {
+function playMusic(id) {
     // playing the music here, 1st one
     // const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
-    const currentMusic = bgmList[currentMusicId];
+    const currentMusic = bgmList[id];
     currentMusic.ost.play();
     console.log(currentMusic);
     console.log(bgmList[0]);
 }
 
 function stopMusic() {
-    
+    audio.pause();
+    audio.currentTime = 0;
 }
 
 function pauseMusic() {
