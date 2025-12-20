@@ -91,6 +91,13 @@ body {
     color: var(--color-text-primary);
 }
 
+.music-title {
+    margin: 1rem 0; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-accent-primary);
+}
+
 .hidden {
     display: none;
 }
