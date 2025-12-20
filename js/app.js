@@ -41,9 +41,10 @@ function playMusic(id) {
     console.log(bgmList[0]);
 }
 
-function stopMusic() {
-    audio.pause();
-    audio.currentTime = 0;
+function stopMusic(id) {
+    const currentMusic = bgmList[id];
+    currentMusic.pause();
+    currentMusic.currentTime = 0;
 }
 
 function pauseMusic() {
@@ -76,3 +77,9 @@ function previousMusic() {
     }
     console.log(currentMusicId);
 }
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        stopMusic(currentMusicId);
+    }
+})
