@@ -18,6 +18,7 @@ btnContainer.addEventListener('click', e => {
     }    
     if (e.target.closest('.play-btn')) {
         console.log('yes, that\'s play-btn!');
+        playMusic();
     }    
     if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
@@ -28,7 +29,9 @@ btnContainer.addEventListener('click', e => {
 })
 
 function playMusic() {
-    
+    // playing the music here, 1st one
+    const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
+    console.log(currentMusic);
 }
 
 function stopMusic() {
