@@ -4,6 +4,8 @@ import {bgmList} from './bgm.js'
 const btnContainer = document.querySelector('.media-btns');
 console.log(btnContainer);
 
+let currentMusicId = 0;
+
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
     const btn = e.target.closest('.btn');
@@ -33,6 +35,7 @@ function playMusic() {
     const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
     currentMusic.ost.play();
     console.log(currentMusic);
+    console.log(bgmList[0]);
 }
 
 function stopMusic() {
@@ -52,9 +55,9 @@ function moveBackward() {
 }
 
 function nextMusic() {
-    
+    currentMusicId++;
 }
 
 function previousMusic() {
-    
+    currentMusicId--;
 }
