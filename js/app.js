@@ -103,3 +103,10 @@ function displayMusicTitle(id) {
     musicTitle.append(titleSpan);
     
 }
+
+// next plans
+// TODO 1- call the stop function when you click one the next/previous music
+// TODO 2- call the show function when you click on the next/show (dynamic UI FeedBack)
+// TODO 3- get rid of the args, this is global scope variable
+// TODO 4- add image & and more info
+// TODO 5- add a music bar and a time, use audio.length property if there's one
