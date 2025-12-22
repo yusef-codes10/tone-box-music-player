@@ -134,3 +134,6 @@ function displayMusicTitle() {
 // ! 4 & 5 left
 // TODO 4- add image & and more info
 // TODO 5- add a music bar and a time, use audio.length property if there's one
+
+// TODO 6- volume down, volume up
+// TODO 7- jumping forward/going backward
