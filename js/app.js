@@ -71,6 +71,9 @@ function nextMusic() {
         currentMusicId = 0;
     }
     console.log(currentMusicId);
+
+    // display the next music title
+    displayMusicTitle();
 }
 
 function previousMusic() {
@@ -80,6 +83,9 @@ function previousMusic() {
         currentMusicId--;
     }
     console.log(currentMusicId);
+
+    // display the previous music title
+    displayMusicTitle();
 }
 
 document.addEventListener('keydown', e => {
