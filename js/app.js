@@ -45,14 +45,16 @@ function playMusic() {
     displayMusicTitle(currentMusicId);
 }
 
+
 function stopMusic() {
-    const currentMusic = bgmList[currentMusicId];
-    currentMusic.ost.pause();
-    currentMusic.currentTime = 0;
+    pauseMusic();
+    pauseMusic().currentTime = 0;
 }
 
 function pauseMusic() {
-    
+    const currentMusic = bgmList[currentMusicId];
+    currentMusic.ost.pause();
+    return currentMusic;
 }
 
 function moveForward() {

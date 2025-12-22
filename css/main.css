@@ -29,7 +29,7 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0)), url(/assets/tone-box-bg.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0)), url(/assets/images/tone-box-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
