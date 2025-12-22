@@ -64,6 +64,9 @@ function moveBackward() {
 }
 
 function nextMusic() {
+    // stop the current playing music
+    stopMusic();
+
     // we have to make sure to not get out of bounds
     if (currentMusicId < bgmList.length - 1) {
         currentMusicId++;
@@ -92,6 +95,7 @@ function previousMusic() {
 
     // stop the current playing music
     stopMusic();
+    // ! there is a bug | it only stops when the id is reset to zero
 }
 
 document.addEventListener('keydown', e => {
