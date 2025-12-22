@@ -48,7 +48,7 @@ function playMusic() {
 
 function stopMusic() {
     pauseMusic();
-    pauseMusic().currentTime = 0;
+    pauseMusic().ost.currentTime = 0;
 }
 
 function pauseMusic() {
