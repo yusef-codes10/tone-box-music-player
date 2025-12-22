@@ -74,6 +74,9 @@ function nextMusic() {
 
     // display the next music title
     displayMusicTitle();
+
+    // stop the current playing music
+    stopMusic();
 }
 
 function previousMusic() {
@@ -86,6 +89,9 @@ function previousMusic() {
 
     // display the previous music title
     displayMusicTitle();
+
+    // stop the current playing music
+    stopMusic();
 }
 
 document.addEventListener('keydown', e => {
