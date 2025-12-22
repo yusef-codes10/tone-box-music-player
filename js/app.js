@@ -104,6 +104,22 @@ function previousMusic() {
     stopMusic();
 }
 
+function voluneUp() {
+    
+}
+
+function volumeDown() {
+    
+}
+
+function skipForward() {
+    
+}
+
+function skipBackward() {
+    
+}
+
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         stopMusic(currentMusicId);
