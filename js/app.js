@@ -22,31 +22,31 @@ btnContainer.addEventListener('click', e => {
     }    
     if (e.target.closest('.play-btn')) {
         console.log('yes, that\'s play-btn!');
-        playMusic(currentMusicId);
+        playMusic();
     }    
     if (e.target.closest('.forward-btn')) {
         console.log('yes, that\'s forward-btn!');
     }    
     if (e.target.closest('.forward-step-btn')) {
         console.log('yes, that\'s forward-step-btn!');
-        nextMusic(currentMusicId);
+        nextMusic();
     }
 })
 
-function playMusic(id) {
+function playMusic() {
     // playing the music here, 1st one
     // const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
-    const currentMusic = bgmList[id];
+    const currentMusic = bgmList[currentMusicId];
     currentMusic.ost.play();
     console.log(currentMusic);
     console.log(bgmList[0]);
 
     // calling the display music
-    displayMusicTitle(id);
+    displayMusicTitle(currentMusicId);
 }
 
-function stopMusic(id) {
-    const currentMusic = bgmList[id];
+function stopMusic() {
+    const currentMusic = bgmList[currentMusicId];
     currentMusic.ost.pause();
     currentMusic.currentTime = 0;
 }
@@ -88,7 +88,7 @@ document.addEventListener('keydown', e => {
     }
 })
 
-function displayMusicTitle(id) {
+function displayMusicTitle() {
     // updating the whole state
     const items = musicTitle.querySelectorAll('.title-dynamic');
     // items is a node list now
@@ -96,7 +96,7 @@ function displayMusicTitle(id) {
         item => item.remove()
     );
 
-    const currentMusic = bgmList[id];
+    const currentMusic = bgmList[currentMusicId];
     const titleSpan = document.createElement('p');
     titleSpan.classList.add('title-dynamic');
     titleSpan.textContent = currentMusic.title;
