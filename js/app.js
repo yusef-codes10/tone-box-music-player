@@ -83,6 +83,11 @@ function nextMusic() {
 }
 
 function previousMusic() {
+    // ! there is a bug | it only stops when the id is reset to zero
+    // ? call it before updatignt the state
+    // stop the current playing music
+    stopMusic();
+
     if (currentMusicId <= 0) {
         currentMusicId = bgmList.length - 1;
     } else {
@@ -95,7 +100,6 @@ function previousMusic() {
 
     // stop the current playing music
     stopMusic();
-    // ! there is a bug | it only stops when the id is reset to zero
 }
 
 document.addEventListener('keydown', e => {
