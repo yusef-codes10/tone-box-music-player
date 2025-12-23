@@ -109,7 +109,7 @@ function previousMusic() {
 
 function voluneUp() {
     const audio = bgmList[currentMusicId].ost;
-    audio.volume = Math.min(1, audio.volume - step);
+    audio.volume = Math.min(0, audio.volume - step);
 }
 
 function volumeDown() {
@@ -135,6 +135,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown') {
         console.log('key down');
+        volumeDown();
     }
 })
 
