@@ -14,7 +14,7 @@ export function startProgress() {
     if (intervalId !== null) return; // prevent duplicates
 
     intervalId = setInterval(() => {
-        progress += 10;
+        progress += 1;
         bar.style.width = progress + '%';
 
         if (progress >= 100) {

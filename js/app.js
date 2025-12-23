@@ -176,3 +176,5 @@ function displayMusicTitle() {
 function increaseWidth() {
     bar.style.width = 80 + '%';
 }
+
+// TODO 8 figure out how to make the bar progress based on the audio
