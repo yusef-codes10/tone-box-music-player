@@ -7,6 +7,9 @@ const musicTitle = document.querySelector('.music-title');
 
 let currentMusicId = 0;
 
+// this is the volume step
+let step  = 0.1;
+
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
     const btn = e.target.closest('.btn');
