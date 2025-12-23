@@ -138,6 +138,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowUp') {
         console.log('Arrow Up');
+        volumeUp();
     }
 })
 
