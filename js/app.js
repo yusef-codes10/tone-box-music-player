@@ -1,5 +1,5 @@
 import {bgmList} from './bgm.js'
-import { interval } from "./progress.js";
+import { startProgress, stopProgress } from "./progress.js";
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
@@ -47,6 +47,7 @@ function playMusic() {
 
     // calling the display music
     displayMusicTitle(currentMusicId);
+    startProgress();
 }
 
 

@@ -11,12 +11,14 @@ let intervalId = null;
 // we have to create a function that does that duh!
 
 export function startProgress() {
+    console.log('progress started');
+    console.log(bar);
     if (intervalId === null) return;
 
     intervalId = setInterval(() => {
     progress += 10;
 
-    bar.computedStyleMap.width = progress + '%';
+    bar.style.width = progress + '%';
 
     if (progress > 100) {
         stopProgress();
