@@ -108,7 +108,8 @@ function previousMusic() {
 }
 
 function voluneUp() {
-    
+    const audio = bgmList[currentMusicId].ost;
+    audio.volume = Math.min(1, audio.volume - step);
 }
 
 function volumeDown() {
