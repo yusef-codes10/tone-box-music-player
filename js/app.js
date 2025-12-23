@@ -133,7 +133,7 @@ document.addEventListener('keydown', e => {
 
 // arrowDown to invoke the volumeDown()
 document.addEventListener('keydown', e => {
-    if (e.key === 'keyDown') {
+    if (e.key === 'ArrowDown') {
         console.log('key down');
     }
 })
