@@ -11,6 +11,7 @@ let intervalId = null;
 // we have to create a function that does that duh!
 
 export function startProgress() {
+    // The bug was in this condition, it's '!==' not '==='
     if (intervalId !== null) return; // prevent duplicates
 
     intervalId = setInterval(() => {
