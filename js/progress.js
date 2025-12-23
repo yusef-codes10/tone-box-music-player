@@ -6,8 +6,12 @@ let progress = 0;
 
 // each time the music passes we increemnt
 
-const interval = setInterval(() => {
+export const interval = setInterval(() => {
     progress += 10;
 
     bar.computedStyleMap.width = progress + '%';
+
+    if (progress > 100) {
+        clearInterval(interval);
+    }
 }, 1000);
