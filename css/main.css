@@ -101,3 +101,18 @@ body {
 .hidden {
     display: none;
 }
+
+.progressive-bar {
+    width: 400px;
+    height: 10px;
+    /* background-color: var(--color-bg-primary); */
+    background-color: seagreen;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--color-accent-primary);
+}
