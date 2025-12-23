@@ -124,9 +124,17 @@ function skipBackward() {
     
 }
 
+// esc stop music
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         stopMusic(currentMusicId);
+    }
+})
+
+// arrowDown to invoke the volumeDown()
+document.addEventListener('keydown', e => {
+    if (e.key === 'keyDown') {
+        console.log('key down');
     }
 })
 
