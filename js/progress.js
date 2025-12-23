@@ -22,7 +22,9 @@ export function startProgress() {
         stopProgress();
     }
 }, 1000);
+}
 
-
-
+export function stopProgress() {
+    clearInterval(intervalId);
+    intervalId = null;
 }
