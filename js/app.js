@@ -1,5 +1,5 @@
 import {bgmList} from './bgm.js'
-import { startProgress, stopProgress } from "./progress.js";
+import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
@@ -171,3 +171,8 @@ function displayMusicTitle() {
 
 // TODO 6- volume down, volume up
 // TODO 7- jumping forward/going backward
+
+// a test function to increase the width with every click
+function increaseWidth() {
+    bar.style.width = 80 + '%';
+}

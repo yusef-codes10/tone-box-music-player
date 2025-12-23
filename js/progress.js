@@ -1,6 +1,6 @@
 
 // the bar
-const bar = document.querySelector('.bar');
+export const bar = document.querySelector('.bar');
 
 let progress = 0;
 let intervalId = null;
@@ -11,19 +11,16 @@ let intervalId = null;
 // we have to create a function that does that duh!
 
 export function startProgress() {
-    console.log('progress started');
-    console.log(bar);
-    if (intervalId === null) return;
+    if (intervalId !== null) return; // prevent duplicates
 
     intervalId = setInterval(() => {
-    progress += 10;
+        progress += 10;
+        bar.style.width = progress + '%';
 
-    bar.style.width = progress + '%';
-
-    if (progress > 100) {
-        stopProgress();
-    }
-}, 1000);
+        if (progress >= 100) {
+            stopProgress();
+        }
+    }, 1000);
 }
 
 export function stopProgress() {
