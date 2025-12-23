@@ -99,9 +99,6 @@ function previousMusic() {
 
     // display the previous music title
     displayMusicTitle();
-
-    // stop the current playing music
-    stopMusic();
 }
 
 function volumeUp() {
@@ -134,6 +131,13 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown') {
         console.log('key down');
         volumeDown();
+    }
+})
+
+// aroowUp keyDown event
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowUp') {
+        console.log('Arrow Up');
     }
 })
 
