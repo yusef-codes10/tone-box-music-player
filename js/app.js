@@ -107,13 +107,13 @@ function previousMusic() {
     stopMusic();
 }
 
-function voluneUp() {
-    const audio = bgmList[currentMusicId].ost;
-    audio.volume = Math.min(0, audio.volume - step);
+function volumeUp() {
+
 }
 
 function volumeDown() {
-    
+    const audio = bgmList[currentMusicId].ost;
+    audio.volume = Math.max(0, audio.volume - step);
 }
 
 function skipForward() {
