@@ -1,4 +1,5 @@
 import {bgmList} from './bgm.js'
+import { interval } from "./progress.js";
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
