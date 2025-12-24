@@ -5,6 +5,8 @@ import { startProgress, stopProgress,bar } from "./progress.js";
 const btnContainer = document.querySelector('.media-btns');
 const musicTitle = document.querySelector('.music-title');
 
+const imgContainer = document.querySelector('.music-img');
+
 
 let currentMusicId = 0;
 
@@ -111,6 +113,11 @@ function volumeUp() {
 function volumeDown() {
     const audio = bgmList[currentMusicId].ost;
     audio.volume = Math.max(0, audio.volume - step);
+}
+
+function loadImg() {
+    // we are going to load the img for each music
+    // pay attention to the state
 }
 
 function skipForward() {
