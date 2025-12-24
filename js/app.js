@@ -87,6 +87,7 @@ function nextMusic() {
 
     // display the next music title
     displayMusicTitle();
+    loadImg();
 }
 
 function previousMusic() {
@@ -104,6 +105,7 @@ function previousMusic() {
 
     // display the previous music title
     displayMusicTitle();
+    loadImg();
 }
 
 function volumeUp() {
