@@ -4,6 +4,7 @@ export const bar = document.querySelector('.bar');
 import {bgmList} from './bgm.js';
 console.log(bgmList[0].ost.duration);
 
+// ! we want to use a percentage of the duration, the problem is it's only accessible once you play the audio
 let progress = 0;
 let intervalId = null;
 
