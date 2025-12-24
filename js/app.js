@@ -118,6 +118,9 @@ function volumeDown() {
 function loadImg() {
     // we are going to load the img for each music
     // pay attention to the state
+    const img = document.createElement('img');
+    img.src = bgmList[currentMusicId].img;
+    imgContainer.append(img);
 }
 
 function skipForward() {
