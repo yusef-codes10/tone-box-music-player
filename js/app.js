@@ -50,6 +50,7 @@ function playMusic() {
     // calling the display music
     displayMusicTitle(currentMusicId);
     startProgress();
+    loadImg();
 }
 
 
