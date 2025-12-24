@@ -117,11 +117,19 @@ function volumeDown() {
 }
 
 function loadImg() {
+    // we need a nodeList to use foreach
+    const imgs = document.querySelectorAll('.img-todelete');
+    imgs.forEach(
+        // pass a callback or function expresion
+        images => images.remove()
+    )
     // we are going to load the img for each music
     // pay attention to the state
     const img = document.createElement('img');
     img.src = bgmList[currentMusicId].img;
+    img.classList.add('img-todelete')
     imgContainer.append(img);
+
 }
 
 function skipForward() {
