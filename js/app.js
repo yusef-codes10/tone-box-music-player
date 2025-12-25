@@ -205,3 +205,7 @@ const bar = document.querySelector('.bar');
 
 let musicDuration = 0;
 let currentMusicTime = 0;
+
+function progressBar() {
+    
+}
