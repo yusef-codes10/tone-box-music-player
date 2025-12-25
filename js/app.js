@@ -55,7 +55,9 @@ function playMusic() {
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
+                // use this for the progress percentage
                 console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
+                // use this for displaying it 
                 console.log(currentMusic.ost.currentTime.toFixed(1));
         }
     )
