@@ -249,7 +249,7 @@ function progressBarV2() {
     )
 
     // create the new element
-    
+    // TODO: I have to turn it into text instead using this '00:00'
     const timeText = document.createElement('p');
     timeText.classList.add('text-todelete');
     timeText.textContent = bgmList[currentMusicId].ost.currentTime.toFixed(1);
