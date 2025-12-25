@@ -31,3 +31,6 @@ export function stopProgress() {
     clearInterval(intervalId);
     intervalId = null;
 }
+
+
+// using setInterval is not ideal for the progress bar
