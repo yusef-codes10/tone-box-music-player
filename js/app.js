@@ -263,5 +263,6 @@ function progressBarV2() {
 
 function updateBar() {
     const barWidth = (currentMusicTime / musicDuration) * 100;
+    bar.style.width = barWidth + '%';
     console.log(barWidth);
 }
