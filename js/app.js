@@ -70,9 +70,9 @@ function playMusic() {
                 // console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 // console.log(currentMusic.ost.currentTime.toFixed(1));
-                console.log(currentMusicTime);
+                // console.log(currentMusicTime);
                 progressBarV2();
-                // updateBar();
+                updateBar();
         }
     )
 }
