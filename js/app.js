@@ -61,6 +61,7 @@ function playMusic() {
                 console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 console.log(currentMusic.ost.currentTime.toFixed(1));
+                progressBarV2();
         }
     )
 }
@@ -242,7 +243,10 @@ function progressBar() {
 // progress bar V2, since I know the timeupdate event
 function progressBarV2() {
     // clear the entire state
-
+    const timeTexts = document.querySelectorAll('.text-todelete');
+    timeTexts.forEach(
+        item => item.remove()
+    )
 
     // create the new element
     
