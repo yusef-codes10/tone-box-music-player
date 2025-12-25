@@ -51,7 +51,6 @@ function playMusic() {
 
     // calling the display music
     displayMusicTitle(currentMusicId);
-    startProgress();
 
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
