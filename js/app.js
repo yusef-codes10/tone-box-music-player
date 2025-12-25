@@ -54,14 +54,19 @@ function playMusic() {
     // calling the display music
     displayMusicTitle(currentMusicId);
 
+    // setting 
+    musicDuration = currentMusic.ost.duration;
+    currentMusicTime = currentMusic.ost.currentTime;
+
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
                 // use this for the progress percentage
-                console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
+                // console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
-                console.log(currentMusic.ost.currentTime.toFixed(1));
+                // console.log(currentMusic.ost.currentTime.toFixed(1));
                 progressBarV2();
+                updateBar();
         }
     )
 }
@@ -247,11 +252,15 @@ function progressBarV2() {
     timeTexts.forEach(
         item => item.remove()
     )
-
     // create the new element
     // TODO: I have to turn it into text instead using this '00:00'
     const timeText = document.createElement('p');
     timeText.classList.add('text-todelete');
     timeText.textContent = bgmList[currentMusicId].ost.currentTime.toFixed(1);
     progressTime.append(timeText);
+}
+
+function updateBar() {
+    const barWidth = (currentMusicTime / musicDuration) * 100;
+    console.log(barWidth);
 }
