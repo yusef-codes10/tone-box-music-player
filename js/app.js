@@ -208,4 +208,7 @@ let currentMusicTime = 0;
 
 function progressBar() {
     
+    if (currentMusicTime < musicDuration) {
+        // progress the bar
+    }
 }
