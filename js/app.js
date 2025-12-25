@@ -1,12 +1,11 @@
 import {bgmList} from './bgm.js'
-import { startProgress, stopProgress,bar } from "./progress.js";
+// import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
 const btnContainer = document.querySelector('.media-btns');
 const musicTitle = document.querySelector('.music-title');
 
 const imgContainer = document.querySelector('.music-img');
-
 
 let currentMusicId = 0;
 
@@ -199,3 +198,10 @@ function increaseWidth() {
 }
 
 // TODO 8 figure out how to make the bar progress based on the audio
+
+
+// the progress bar functionality
+const bar = document.querySelector('.bar');
+
+let musicDuration = 0;
+let currentMusicTime = 0;

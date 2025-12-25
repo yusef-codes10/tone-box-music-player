@@ -1,6 +1,6 @@
 
 // the bar
-export const bar = document.querySelector('.bar');
+// export const bar = document.querySelector('.bar');
 import {bgmList} from './bgm.js';
 console.log(bgmList[0].ost.duration);
 
