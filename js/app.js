@@ -56,6 +56,7 @@ function playMusic() {
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
                 console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
+                console.log(currentMusic.ost.currentTime.toFixed(1));
         }
     )
 }
