@@ -39,17 +39,19 @@ btnContainer.addEventListener('click', e => {
 })
 
 function playMusic() {
+    loadImg();
     // playing the music here, 1st one
     // const currentMusic = bgmList.find(m => m.id === 'armor-hero-main');
     const currentMusic = bgmList[currentMusicId];
     currentMusic.ost.play();
     console.log(currentMusic);
     console.log(bgmList[0]);
+    console.log(currentMusic.ost.duration);
+    console.log(currentMusic.ost.currentTime);
 
     // calling the display music
     displayMusicTitle(currentMusicId);
     startProgress();
-    loadImg();
 }
 
 
