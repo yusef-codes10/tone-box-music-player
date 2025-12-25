@@ -61,7 +61,6 @@ function playMusic() {
                 console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 console.log(currentMusic.ost.currentTime.toFixed(1));
-                progressTime
         }
     )
 }
@@ -246,4 +245,9 @@ function progressBarV2() {
 
 
     // create the new element
+    
+    const timeText = document.createElement('p');
+    timeText.classList.add('text-todelete');
+    timeText.textContent = bgmList[currentMusicId].ost.currentTime.toFixed(1);
+    progressTime.append(timeText);
 }
