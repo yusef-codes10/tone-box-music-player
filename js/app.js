@@ -13,6 +13,11 @@ let currentMusicId = 0;
 
 // this is the volume step
 let step  = 0.1;
+// the progress bar functionality
+const bar = document.querySelector('.bar');
+
+let musicDuration = 0;
+let currentMusicTime = 0;
 
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
@@ -65,6 +70,7 @@ function playMusic() {
                 // console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 // console.log(currentMusic.ost.currentTime.toFixed(1));
+                console.log(currentMusicTime);
                 progressBarV2();
                 updateBar();
         }
@@ -219,11 +225,6 @@ function increaseWidth() {
 // TODO 8 figure out how to make the bar progress based on the audio
 
 
-// the progress bar functionality
-const bar = document.querySelector('.bar');
-
-let musicDuration = 0;
-let currentMusicTime = 0;
 
 function progressBar() {
     // ! this function should be passed as a callback to the timeupdate
