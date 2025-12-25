@@ -47,11 +47,18 @@ function playMusic() {
     console.log(currentMusic);
     console.log(bgmList[0]);
     console.log(currentMusic.ost.duration);
-    console.log(currentMusic.ost.currentTime);
+
 
     // calling the display music
     displayMusicTitle(currentMusicId);
     startProgress();
+
+    // ! attach the time event her
+    currentMusic.ost.addEventListener('timeupdate', 
+        () => {
+                console.log(currentMusic.ost.currentTime);
+        }
+    )
 }
 
 
