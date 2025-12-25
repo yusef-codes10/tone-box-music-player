@@ -209,6 +209,9 @@ let musicDuration = 0;
 let currentMusicTime = 0;
 
 function progressBar() {
+    // ! this function should be passed as a callback to the timeupdate
+    // ! event that's an audio event
+
     // always reset the state
     bar.style.width = 0 + '%';
 
