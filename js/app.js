@@ -55,7 +55,7 @@ function playMusic() {
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
-                console.log(currentMusic.ost.currentTime);
+                console.log(Math.floor(currentMusic.ost.currentTime));
         }
     )
 }
