@@ -7,6 +7,8 @@ const musicTitle = document.querySelector('.music-title');
 
 const imgContainer = document.querySelector('.music-img');
 
+const progressTime = document.querySelector('.progress-time');
+
 let currentMusicId = 0;
 
 // this is the volume step
@@ -59,6 +61,7 @@ function playMusic() {
                 console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 console.log(currentMusic.ost.currentTime.toFixed(1));
+                progressTime
         }
     )
 }
@@ -234,4 +237,13 @@ function progressBar() {
         bar.style.width = progress + '%';
         // progress is the percentage of currentMusicTime
     }
+}
+
+
+// progress bar V2, since I know the timeupdate event
+function progressBarV2() {
+    // clear the entire state
+
+
+    // create the new element
 }
