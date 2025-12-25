@@ -61,18 +61,18 @@ function playMusic() {
 
     // setting 
     musicDuration = currentMusic.ost.duration;
-    currentMusicTime = currentMusic.ost.currentTime;
 
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
+                currentMusicTime = currentMusic.ost.currentTime;
                 // use this for the progress percentage
                 // console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 
                 // console.log(currentMusic.ost.currentTime.toFixed(1));
                 console.log(currentMusicTime);
                 progressBarV2();
-                updateBar();
+                // updateBar();
         }
     )
 }
