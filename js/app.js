@@ -207,8 +207,12 @@ let musicDuration = 0;
 let currentMusicTime = 0;
 
 function progressBar() {
-    
+    // always reset the state
+    bar.style.width = 0 + '%';
+
     if (currentMusicTime < musicDuration) {
         // progress the bar
+        bar.style.width = progress + '%';
+        // progress is the percentage of currentMusicTime
     }
 }
