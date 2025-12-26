@@ -10,8 +10,16 @@ export function setMusicDuration(id) {
     musicDuration = id;
 }
 
+export function getMusicDuraion() {
+    return musicDuration;
+}
+
 export let currentMusicTime = 0;
 export function setCurrentMusicTime(id) {
     currentMusicTime = id;
+}
+
+export function getCurrentMusicTime() {
+    return currentMusicTime;
 }
 
