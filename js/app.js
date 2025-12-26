@@ -1,5 +1,5 @@
 import {bgmList} from './bgm.js'
-import { progressTime, bar } from "./progressBar.js";
+import { progressTime, bar, musicDuration, currentMusicTime } from "./progressBar.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
@@ -16,8 +16,6 @@ let currentMusicId = 0;
 let step  = 0.1;
 
 
-let musicDuration = 0;
-let currentMusicTime = 0;
 
 btnContainer.addEventListener('click', e => {
     // ! we have to use closest() method
