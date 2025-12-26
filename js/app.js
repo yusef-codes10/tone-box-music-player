@@ -1,5 +1,5 @@
 import {bgmList} from './bgm.js'
-import { progressTime } from "./progressBar.js";
+import { progressTime, bar } from "./progressBar.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
@@ -14,8 +14,7 @@ let currentMusicId = 0;
 
 // this is the volume step
 let step  = 0.1;
-// the progress bar functionality
-const bar = document.querySelector('.bar');
+
 
 let musicDuration = 0;
 let currentMusicTime = 0;
