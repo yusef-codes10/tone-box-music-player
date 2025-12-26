@@ -5,7 +5,7 @@ export const progressTime = document.querySelector('.progress-time');
 export const bar = document.querySelector('.bar');
 
 
-export let musicDuration = 0;
+let musicDuration = 0;
 export function setMusicDuration(id) {
     musicDuration = id;
 }
@@ -14,7 +14,7 @@ export function getMusicDuraion() {
     return musicDuration;
 }
 
-export let currentMusicTime = 0;
+let currentMusicTime = 0;
 export function setCurrentMusicTime(id) {
     currentMusicTime = id;
 }

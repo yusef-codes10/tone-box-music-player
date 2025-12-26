@@ -1,6 +1,7 @@
 import {bgmList} from './bgm.js'
 import { progressTime, bar, musicDuration, currentMusicTime
     ,setCurrentMusicTime, setMusicDuration
+    ,getCurrentMusicTime, getMusicDuraion
  } from "./progressBar.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
@@ -262,7 +263,7 @@ function progressBarV2() {
 }
 
 function updateBar() {
-    const barWidth = (currentMusicTime / musicDuration) * 100;
+    const barWidth = (getCurrentMusicTime() / getMusicDuraion()) * 100;
     bar.style.width = barWidth + '%';
     console.log(barWidth);
 }
