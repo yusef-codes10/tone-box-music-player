@@ -1,5 +1,7 @@
 import {bgmList} from './bgm.js'
-import { progressTime, bar, musicDuration, currentMusicTime } from "./progressBar.js";
+import { progressTime, bar, musicDuration, currentMusicTime
+    ,setCurrentMusicTime, setMusicDuration
+ } from "./progressBar.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
@@ -58,12 +60,12 @@ function playMusic() {
     displayMusicTitle(currentMusicId);
 
     // setting 
-    musicDuration = currentMusic.ost.duration;
+    setMusicDuration(currentMusic.ost.duration);
 
     // ! attach the time event her
     currentMusic.ost.addEventListener('timeupdate', 
         () => {
-                currentMusicTime = currentMusic.ost.currentTime;
+                setCurrentMusicTime(currentMusic.ost.currentTime);
                 // use this for the progress percentage
                 // console.log(Math.trunc(currentMusic.ost.currentTime * 10) / 10);
                 // use this for displaying it 

@@ -6,5 +6,12 @@ export const bar = document.querySelector('.bar');
 
 
 export let musicDuration = 0;
+export function setMusicDuration(id) {
+    musicDuration = id;
+}
+
 export let currentMusicTime = 0;
+export function setCurrentMusicTime(id) {
+    currentMusicTime = id;
+}
 
