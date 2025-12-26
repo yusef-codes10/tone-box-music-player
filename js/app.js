@@ -239,3 +239,6 @@ function updateBar() {
     bar.style.width = barWidth + '%';
     console.log(barWidth);
 }
+
+
+// TODO extract other functionality, stop watch logic, and clickable bar (width -> currentTime and vise-versa)
