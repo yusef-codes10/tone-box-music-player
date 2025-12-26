@@ -1,4 +1,5 @@
 import {bgmList} from './bgm.js'
+import { progressTime } from "./progressBar.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
@@ -7,7 +8,7 @@ const musicTitle = document.querySelector('.music-title');
 
 const imgContainer = document.querySelector('.music-img');
 
-const progressTime = document.querySelector('.progress-time');
+// const progressTime = document.querySelector('.progress-time');
 
 let currentMusicId = 0;
 
