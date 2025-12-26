@@ -1,5 +1,5 @@
 import {bgmList} from './bgm.js'
-import { progressTime, bar, musicDuration, currentMusicTime
+import { progressTime, bar
     ,setCurrentMusicTime, setMusicDuration
     ,getCurrentMusicTime, getMusicDuraion
  } from "./progressBar.js";
@@ -206,26 +206,10 @@ function displayMusicTitle() {
     
 }
 
-// next plans
-// TODO 1- call the stop function when you click one the next/previous music
-// TODO 2- call the show function when you click on the next/show (dynamic UI FeedBack)
-// TODO 3- get rid of the args, this is global scope variable
-
-// ! 4 & 5 left
-// TODO 4- add image & and more info
-// TODO 5- add a music bar and a time, use audio.length property if there's one
-
-// TODO 6- volume down, volume up
-// TODO 7- jumping forward/going backward
-
 // a test function to increase the width with every click
 function increaseWidth() {
     bar.style.width = 80 + '%';
 }
-
-// TODO 8 figure out how to make the bar progress based on the audio
-
-
 
 function progressBar() {
     // ! this function should be passed as a callback to the timeupdate
