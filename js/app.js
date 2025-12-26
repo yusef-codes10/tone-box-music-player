@@ -211,24 +211,12 @@ function increaseWidth() {
     bar.style.width = 80 + '%';
 }
 
-function progressBar() {
     // ! this function should be passed as a callback to the timeupdate
     // ! event that's an audio event
 
     // ! 1- User click event (click, mousedown, keydown)
     // ! 2- Time related event (setInterval, counterm, traffic lights)
     // ! 3- Event driven states (audio, object changing events)
-
-
-    // always reset the state
-    bar.style.width = 0 + '%';
-
-    if (currentMusicTime < musicDuration) {
-        // progress the bar
-        bar.style.width = progress + '%';
-        // progress is the percentage of currentMusicTime
-    }
-}
 
 
 // progress bar V2, since I know the timeupdate event
