@@ -238,3 +238,5 @@ progressiveBAr.addEventListener('click',
         console.log(`position is ${e.offsetX}`);
     }
 )
+
+// TODO find the relationship between the offsetX and the width and then the currentTime of the audio object
