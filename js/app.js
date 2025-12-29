@@ -234,7 +234,7 @@ function updateBar() {
 // ! let's make the progress bar clickable
 const progressiveBAr = document.querySelector('.progressive-bar');
 progressiveBAr.addEventListener('click', 
-    () => {
-        console.log('you are clicking on the bar');
+    e => {
+        console.log(`position is ${e.offsetX}`);
     }
 )
