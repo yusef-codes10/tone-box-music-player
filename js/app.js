@@ -206,11 +206,6 @@ function displayMusicTitle() {
     
 }
 
-// a test function to increase the width with every click
-function increaseWidth() {
-    bar.style.width = 80 + '%';
-}
-
     // ! this function should be passed as a callback to the timeupdate
     // ! event that's an audio event
 
