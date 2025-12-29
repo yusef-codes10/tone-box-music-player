@@ -228,3 +228,12 @@ function updateBar() {
 
 
 // TODO extract other functionality, stop watch logic, and clickable bar (width -> currentTime and vise-versa)
+
+
+
+// ! let's make the progress bar clickable
+bar.addEventListener('click', 
+    () => {
+        console.log('you are clicking on the bar');
+    }
+)
