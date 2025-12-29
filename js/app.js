@@ -3,6 +3,7 @@ import { progressTime, bar
     ,setCurrentMusicTime, setMusicDuration
     ,getCurrentMusicTime, getMusicDuraion
  } from "./progressBar.js";
+import { volumeDown, volumeUp } from "./volume.js";
 // import { startProgress, stopProgress,bar } from "./progress.js";
 
 // using event delegation for the buttons
@@ -131,16 +132,6 @@ function previousMusic() {
     // display the previous music title
     displayMusicTitle();
     loadImg();
-}
-
-function volumeUp() {
-    const audio = bgmList[currentMusicId].ost;
-    audio.volume = Math.min(1, audio.volume + step);
-}
-
-function volumeDown() {
-    const audio = bgmList[currentMusicId].ost;
-    audio.volume = Math.max(0, audio.volume - step);
 }
 
 function loadImg() {
