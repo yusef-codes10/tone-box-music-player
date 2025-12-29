@@ -1,6 +1,6 @@
 // volume logic is here
 
-import { bgmList } from "./bgm";
+import { bgmList } from "./bgm.js";
 
 function volumeUp(id, s) {
     const audio = bgmList[id].ost;
