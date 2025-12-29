@@ -2,14 +2,14 @@
 
 import { bgmList } from "./bgm";
 
-function volumeUp(id) {
+function volumeUp(id, s) {
     const audio = bgmList[id].ost;
-    audio.volume = Math.min(1, audio.volume + step);
+    audio.volume = Math.min(1, audio.volume + s);
 }
 
-function volumeDown(id) {
+function volumeDown(id, s) {
     const audio = bgmList[id].ost;
-    audio.volume = Math.max(0, audio.volume - step);
+    audio.volume = Math.max(0, audio.volume - s);
 }
 
 export {volumeUp, volumeDown}
