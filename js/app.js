@@ -169,7 +169,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown') {
         console.log('key down');
-        volumeDown();
+        volumeDown(currentMusicId);
     }
 })
 
@@ -177,7 +177,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowUp') {
         console.log('Arrow Up');
-        volumeUp();
+        volumeUp(currentMusicId);
     }
 })
 
