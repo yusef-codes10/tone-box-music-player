@@ -13,3 +13,5 @@ function volumeDown(id) {
 }
 
 export {volumeUp, volumeDown}
+
+// scope and dependency design issue
